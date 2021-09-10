@@ -2,7 +2,7 @@ import unittest
 import nbconvert
 import numpy as np
 
-with open("assignment_sol_HW2.ipynb") as f:
+with open("assignment_HW2.ipynb") as f:
 	exporter = nbconvert.PythonExporter()
 	python_file, _ = exporter.from_file(f)
 
