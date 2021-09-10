@@ -1,8 +1,12 @@
-# Assignment Template
+# Homework 2
 
-A Github workflow template for PGE310 assignments. 
+Welcome to your first Python assignment! 
 
-## Workflow
-1. Create a Python 3.8 environment with required packages for each assignment as specified in environment.yml
-2. Run unit tests (green checkmark = all tests passed 😁)
+This homework has two problems:
+  1) The first problem consists of assigning values to variables and performing scalar, vector, and matrix operations.
+  2) The second problem will help you practice some graphing and visualization using Matplotlib.
+
+
+Happy coding :)
+
 
