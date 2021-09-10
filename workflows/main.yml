@@ -1,0 +1,40 @@
+on: push
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: $CONDA/bin/conda env update --file environment.yml --name base
+    - name: Problem 1.a
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_a test.py
+    - name: Problem 1.b
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_b test.py
+    - name: Problem 1.c
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_c test.py
+    - name: Problem 1.d
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_d test.py
+    - name: Problem 1.e
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_e test.py
+    - name: Problem 1.f
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_f test.py
+    - name: Problem 1.g
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_g test.py
+    - name: Problem 1.h
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_h test.py
+    - name: Problem 1.i
+      if: ${{ always() }}
+      run: $CONDA/bin/pytest -k prob1_i test.py
