@@ -12,18 +12,17 @@ with open("assignment.py", "w") as f:
 from assignment import *
 
 class TestSolution(unittest.TestCase):
-	def __init__(self):
-		self.a = 9
-		self.b = -8
-		self.u = np.array([2, 4, -2, 5])
-		self.v = np.array([-2, 9, -5, 4])
-		self.w = np.array([6, -1, 2, 2])
-		self.x = np.array([[3], [5], [6]])
-		self.A = np.array([[2, -1, 7], [3, -6, 4], [0, 3, -1]])
-		self.B = np.array([[3, 2, -3], [6, 7, 2], [-4, 2, 1]])
+	a = 9
+	b = -8
+	u = np.array([2, 4, -2, 5])
+	v = np.array([-2, 9, -5, 4])
+	w = np.array([6, -1, 2, 2])
+	x = np.array([[3], [5], [6]])
+	A = np.array([[2, -1, 7], [3, -6, 4], [0, 3, -1]])
+	B = np.array([[3, 2, -3], [6, 7, 2], [-4, 2, 1]])
 
 	def test_prob1_a(self):
-		np.testing.assert_equal(problem_1a(self.w, self.u), 14.)
+		np.testing.assert_equal(problem_1a(w, u), 14.)
 
 	def test_prob1_b(self):
 		np.testing.assert_equal(problem_1b(self.v, self.w), -23)
