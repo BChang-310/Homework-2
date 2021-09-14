@@ -13,28 +13,28 @@ jobs:
       run: $CONDA/bin/conda env update --file environment.yml --name base
     - name: Problem 1.a
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_a test.py
+      run: $CONDA/bin/pytest -k prob1_a test_HW2.py
     - name: Problem 1.b
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_b test.py
+      run: $CONDA/bin/pytest -k prob1_b test_HW2.py
     - name: Problem 1.c
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_c test.py
+      run: $CONDA/bin/pytest -k prob1_c test_HW2.py
     - name: Problem 1.d
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_d test.py
+      run: $CONDA/bin/pytest -k prob1_d test_HW2.py
     - name: Problem 1.e
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_e test.py
+      run: $CONDA/bin/pytest -k prob1_e test_HW2.py
     - name: Problem 1.f
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_f test.py
+      run: $CONDA/bin/pytest -k prob1_f test_HW2.py
     - name: Problem 1.g
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_g test.py
+      run: $CONDA/bin/pytest -k prob1_g test_HW2.py
     - name: Problem 1.h
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_h test.py
+      run: $CONDA/bin/pytest -k prob1_h test_HW2.py
     - name: Problem 1.i
       if: ${{ always() }}
-      run: $CONDA/bin/pytest -k prob1_i test.py
+      run: $CONDA/bin/pytest -k prob1_i test_HW2.py
